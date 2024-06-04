@@ -89,3 +89,16 @@ function asideSectionTogglerBtn() {
         allSelection[i].classList.toggle("open");
     }
 }
+
+/* ============ Modal con Certificaciones ============ */
+function mostrarCertificado(certificadoID) {
+    console.log("se llamo a la funcion");
+    const modal = document.getElementById(`product-modal-${certificadoID}`);
+    modal.style.display = "block";
+}
+
+function cerrarModal(certificadoID) {
+    console.log("se llamo al cierre");
+    const modal = document.getElementById(`product-modal-${certificadoID}`);
+    modal.style.display = "none";
+}

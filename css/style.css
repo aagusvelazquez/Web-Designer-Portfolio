@@ -171,6 +171,7 @@ ul {
     white-space: nowrap;
     border: none;
     background: var(--skin-color);
+    cursor: pointer;
     transition: all .3s ease;
 }
 
@@ -603,6 +604,54 @@ h3.hello span {
     color: var(--text-black-700);
 }
 
+.about .about-content .timeline .timeline-item .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    /* top | right | bottom | left */
+    padding: 5em 20em 15em 40em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about .about-content .timeline .timeline-item .modal .modal-content {
+    background-color: transparent;
+    margin: 5% auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.about .about-content .timeline .timeline-item .modal .modal-content img {
+    width: 100%;
+}
+
+.about .about-content .timeline .timeline-item .form-item .btn.certificado {
+    margin-top: 15px;
+}
+
+.about .about-content .timeline .timeline-item .modal .modal-content .close {
+    color: var(--text-black-900);
+    position: absolute;
+    top: 110px;
+    right: 320px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.about .about-content .timeline .timeline-item .modal .modal-content .close:hover,
+.about .about-content .timeline .timeline-item .modal .modal-content .close:focus {
+    color: var(--skin-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Servicios */
 .service .container {
     padding-bottom: 40px;
@@ -833,6 +882,24 @@ h3.hello span {
         display: block;
         margin-left: 0;
     }
+
+    .about .about-content .timeline .timeline-item .modal {
+        padding: 70px 250px;
+    }
+
+    .about .about-content .timeline .timeline-item .form-item .btn.certificado {
+        width: 100%;
+    }
+
+    .about .about-content .timeline .timeline-item .modal .modal-content .close {
+        top: 90px;
+        right: 20%;
+    }
+
+    .about .about-content .timeline .timeline-item .modal .modal-content .btn {
+        width: auto;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -885,6 +952,28 @@ h3.hello span {
     .about .about-content .personal-info .info-item {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .about .about-content .timeline .timeline-item .modal {
+        padding: 170px 10px;
+    }
+
+    .about .about-content .timeline .timeline-item .form-item .btn.certificado {
+        width: 100%;
+    }
+
+    .about .about-content .timeline .timeline-item .modal .modal-content .close {
+        color: var(--bg-black-100);
+        position: absolute;
+        top: 180px;
+        right: 30px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .about .about-content .timeline .timeline-item .modal .modal-content .btn {
+        width: auto;
+        margin-top: 5px;
     }
 
     .contact .contact-form .form-item.col-12 {
@@ -948,6 +1037,28 @@ h3.hello span {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .about .about-content .timeline .timeline-item .modal {
+        padding: 170px 10px;
+    }
+
+    .about .about-content .timeline .timeline-item .form-item .btn.certificado {
+        width: 100%;
+    }
+
+    .about .about-content .timeline .timeline-item .modal .modal-content .close {
+        color: var(--bg-black-100);
+        position: absolute;
+        top: 180px;
+        right: 30px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .about .about-content .timeline .timeline-item .modal .modal-content .btn {
+        width: auto;
+        margin-top: 5px;
     }
 
     .contact .contact-form .form-item .btn {
