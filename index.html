@@ -14,6 +14,14 @@
     <!--  CSS Files -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/skins/color-1.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./css/style-switcher.css">
+    <!-- Font Awesome - Icons -->
     <script src="https://kit.fontawesome.com/eae8fc4e25.js" crossorigin="anonymous"></script>
 </head>
 
@@ -39,7 +47,7 @@
         <!-- Main Content -->
         <div class="main-content">
             <!-- Sección Inicio -->
-            <section class="home section" id="home">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -47,7 +55,8 @@
                             <h3 class="my-profession">Soy <span class="typing">Web Designer</span></h3>
                             <p> Soy diseñadora web en constante aprendizaje. Mi experiencia es la creación y diseño de
                                 sitios web, diseño gráfico y mcuhos más...</p>
-                            <a href="#contacto" class="btn hire-me">¡Contactame!</a>
+                            <a href="./docs/CV - Agustina Velazquez.pdf" class="btn"
+                                download="Agustina Velazquez - CV">Descargar CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="./images/Foto Perfil.jpg" alt="Foto de Perfil">
@@ -77,7 +86,8 @@
                                         <span>HTML</span>, <span>CSS</span>, <span>Bootstrap CSS</span>,
                                         <span>JavaScript</span>, <span>GIT</span> y <span>GitHub</span>. También poseo
                                         conocimientos básicos de <span>VUE</span>, <span>Java</span>,
-                                        <span>NodeJS</span> y <span>MySQL</span>.</p>
+                                        <span>NodeJS</span> y <span>MySQL</span>.
+                                    </p>
                                 </div>
                             </div>
                             <!-- Información Personal -->
@@ -100,17 +110,17 @@
                                             <p>Ciudad : <span>Morón, Buenos Aires, Argentina</span></p>
                                         </div>
                                     </div>
-                                    <!-- Botones de Descargar CV y Contacto -->
+                                    <!-- Boton de Contacto -->
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="./docs/CV - Agustina Velazquez.pdf" class="btn"
-                                                download="Agustina Velazquez - CV">Descargar CV</a>
-                                            <a href="#contacto" class="btn hire-me">Contactame</a>
+                                            <a href="#contact" data-section-index="1"
+                                                class="btn hire-me">Contactame</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Habilidades -->
                                 <div class="skills padd-15">
+                                    <h3 class="title">Skills</h3>
                                     <div class="row">
                                         <div class="skill-item padd-15">
                                             <h5>HTML</h5>
@@ -192,7 +202,9 @@
                                                         <i class="fa-solid fa-calendar"></i> Mayo 2024
                                                     </h3>
                                                     <h4 class="timeline-title">Agile y Scrum</h4>
-                                                    <p class="timeline-text">Estoy realizando una espcialización brindada por el programa <span>Codo a Codo 4.0</span> de 24hs de formación distribuidas en 6 semanas.</p>
+                                                    <p class="timeline-text">Estoy realizando una espcialización
+                                                        brindada por el programa <span>Codo a Codo 4.0</span> de 24hs de
+                                                        formación distribuidas en 6 semanas.</p>
                                                 </div>
                                                 <!-- timeline item -->
                                                 <div class="timeline-item">
@@ -201,25 +213,35 @@
                                                         <i class="fa-solid fa-calendar"></i> Febrero 2024
                                                     </h3>
                                                     <h4 class="timeline-title">Full Stack NodeJS</h4>
-                                                    <p class="timeline-text">Continúo mi formación en el programa <span>Codo a Codo 4.0</span>, esta vez, especializándome en el lenguaje <span>JavaScript</span> y <span>NodeJS</span> de 208hs de formación y 10hs correspondientes al contenido de <span>Habilidades Blandas</span> distribuidas en 20 semanas.</p>
+                                                    <p class="timeline-text">Continúo mi formación en el programa
+                                                        <span>Codo a Codo 4.0</span>, esta vez, especializándome en el
+                                                        lenguaje <span>JavaScript</span> y <span>NodeJS</span> de 208hs
+                                                        de formación y 10hs correspondientes al contenido de
+                                                        <span>Habilidades Blandas</span> distribuidas en 20 semanas.</p>
                                                 </div>
                                                 <!-- timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa-solid fa-calendar"></i>  Julio 2023
+                                                        <i class="fa-solid fa-calendar"></i> Julio 2023
                                                     </h3>
                                                     <h4 class="timeline-title">Full Stack Java</h4>
-                                                    <p class="timeline-text">Continué mi formación en el programa <span>Codo a Codo 4.0</span> especializándome en el lenguaje <span>Java</span> de 208hs de formación y 10hs correspondientes al contenido de <span>Habilidades Blandas</span> distribuidas en 20 semanas.</p>
+                                                    <p class="timeline-text">Continué mi formación en el programa
+                                                        <span>Codo a Codo 4.0</span> especializándome en el lenguaje
+                                                        <span>Java</span> de 208hs de formación y 10hs correspondientes
+                                                        al contenido de <span>Habilidades Blandas</span> distribuidas en
+                                                        20 semanas.</p>
                                                 </div>
                                                 <!-- timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa-solid fa-calendar"></i>  Julio 2023
+                                                        <i class="fa-solid fa-calendar"></i> Julio 2023
                                                     </h3>
                                                     <h4 class="timeline-title">Programación Inicial</h4>
-                                                    <p class="timeline-text">Comencé mi camino en la programación en el programa <span>Codo a Codo 4.0</span> con este curso de 208hs de formación distribuidas en 20 semanas.</p>
+                                                    <p class="timeline-text">Comencé mi camino en la programación en el
+                                                        programa <span>Codo a Codo 4.0</span> con este curso de 208hs de
+                                                        formación distribuidas en 20 semanas.</p>
                                                 </div>
                                                 <!-- timeline item -->
                                                 <div class="timeline-item">
@@ -228,7 +250,8 @@
                                                         <i class="fa-solid fa-calendar"></i> 2014 -2016
                                                     </h3>
                                                     <h4 class="timeline-title">Inglés</h4>
-                                                    <p class="timeline-text">Estudié en la <span>Universidad Nacional de La Matanza</span> hasta alcanzar el Nivel 7.</p>
+                                                    <p class="timeline-text">Estudié en la <span>Universidad Nacional de
+                                                            La Matanza</span> hasta alcanzar el Nivel 7.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,7 +277,9 @@
                                     <i class="fa-solid fa-mobile-screen-button"></i>
                                 </div>
                                 <h4>Mobile First</h4>
-                                <p>Poseo conocimientos del enfoque de desarrollo y diseño web que prioriza el diseño y el desarrollo para dispositivos móviles por encima del diseño y desarrollo para pantallas de escritorio</p>
+                                <p>Poseo conocimientos del enfoque de desarrollo y diseño web que prioriza el diseño y
+                                    el desarrollo para dispositivos móviles por encima del diseño y desarrollo para
+                                    pantallas de escritorio</p>
                             </div>
                         </div>
                         <!-- Servicio Item -->
@@ -264,7 +289,9 @@
                                     <i class="fa-solid fa-laptop-code"></i>
                                 </div>
                                 <h4>Diseño Web Responsive - RWD</h4>
-                                <p>He desarrollado los conocimientos para llevar a cabo diseños adaptables, es decir, adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas.</p>
+                                <p>He desarrollado los conocimientos para llevar a cabo diseños adaptables, es decir,
+                                    adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para
+                                    visitarlas.</p>
                             </div>
                         </div>
                         <!-- Servicio Item -->
@@ -274,7 +301,8 @@
                                     <i class="fa-solid fa-palette"></i>
                                 </div>
                                 <h4>Diseño Gráfico</h4>
-                                <p>Poseo conocimientos de diversas herramientas de diseño y edición para llevar a cabo tareas de diseño, lo cuál me permite lograr diseños mas personalziados y únicos.</p>
+                                <p>Poseo conocimientos de diversas herramientas de diseño y edición para llevar a cabo
+                                    tareas de diseño, lo cuál me permite lograr diseños mas personalziados y únicos.</p>
                             </div>
                         </div>
                         <!-- Servicio Item -->
@@ -284,7 +312,9 @@
                                     <i class="fa-solid fa-code"></i>
                                 </div>
                                 <h4>Lenguajes de Programación</h4>
-                                <p>Poseo conocimiento en diversos lenguajes de programación (ver <a href="#about">Skills</a>) para lelvar a cabo proyectos completos y abarcativos en su totalidad.</p>
+                                <p>Poseo conocimiento en diversos lenguajes de programación (ver <a
+                                        href="#about">Skills</a>) para lelvar a cabo proyectos completos y abarcativos
+                                    en su totalidad.</p>
                             </div>
                         </div>
                         <!-- Servicio Item -->
@@ -294,7 +324,9 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                                 <h4>Desarrollo Autodidacta</h4>
-                                <p>Si bien he desarrollado mis conocimientos en una diversidad de cursos formales, también gran parte de mis aprendizajes los he desarrollado de manera autodidacta.</p>
+                                <p>Si bien he desarrollado mis conocimientos en una diversidad de cursos formales,
+                                    también gran parte de mis aprendizajes los he desarrollado de manera autodidacta.
+                                </p>
                             </div>
                         </div>
                         <!-- Servicio Item -->
@@ -304,7 +336,9 @@
                                     <i class="fa-solid fa-bullhorn"></i>
                                 </div>
                                 <h4>Marketing Digital</h4>
-                                <p>Me encuentro formándome en el área gracias a la oportunidad que me ha otorgado Capacitar de participar del curso Marketing 360° brindado por Eidos Global y Microsoft.</p>
+                                <p>Me encuentro formándome en el área gracias a la oportunidad que me ha otorgado
+                                    Capacitar de participar del curso Marketing 360° brindado por Eidos Global y
+                                    Microsoft.</p>
                             </div>
                         </div>
                     </div>
@@ -325,7 +359,8 @@
                     </div>
                     <div class="row">
                         <!-- Portfolio Item -->
-                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank" class="portfolio-item padd-15" title="Proyecto 1 - Conf BsAs">
+                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"
+                            class="portfolio-item padd-15" title="Proyecto 1 - Conf BsAs">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="./images/Proyecto 1.png" alt="Proyecto Conf Bs As">
@@ -333,7 +368,8 @@
                             </div>
                         </a>
                         <!-- Portfolio Item -->
-                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"  class="portfolio-item padd-15" title="Proyecto 2">
+                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"
+                            class="portfolio-item padd-15" title="Proyecto 2">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="./images/Proyecto 1.png" alt="Proyecto Conf Bs As">
@@ -341,7 +377,8 @@
                             </div>
                         </a>
                         <!-- Portfolio Item -->
-                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"  class="portfolio-item padd-15" title="Proyecto 3">
+                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"
+                            class="portfolio-item padd-15" title="Proyecto 3">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="./images/Proyecto 1.png" alt="Proyecto Conf Bs As">
@@ -349,7 +386,8 @@
                             </div>
                         </a>
                         <!-- Portfolio Item -->
-                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"  class="portfolio-item padd-15" title="Proyecto 4">
+                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"
+                            class="portfolio-item padd-15" title="Proyecto 4">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="./images/Proyecto 1.png" alt="Proyecto Conf Bs As">
@@ -357,7 +395,8 @@
                             </div>
                         </a>
                         <!-- Portfolio Item -->
-                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"  class="portfolio-item padd-15" title="Proyecto 5">
+                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"
+                            class="portfolio-item padd-15" title="Proyecto 5">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="./images/Proyecto 1.png" alt="Proyecto Conf Bs As">
@@ -365,7 +404,8 @@
                             </div>
                         </a>
                         <!-- Portfolio Item -->
-                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"  class="portfolio-item padd-15" title="Proyecto 6">
+                        <a href="https://aagusvelazquez.github.io/ConfBsAs/" target="_blank"
+                            class="portfolio-item padd-15" title="Proyecto 6">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="./images/Proyecto 1.png" alt="Proyecto Conf Bs As">
@@ -390,7 +430,9 @@
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa-solid fa-phone"></i></div>
                             <h4>WhatsApp</h4>
-                            <p><a href="https://api.whatsapp.com/send?phone=5491161752604&text=¡Hola,%20tomé%20tu%20contacto%20de%20tu%20Portfolio%20y%20me%20gustaría%20conversar%20con%20vos%20sobre">+54 9 11 6175 2604</a></p>
+                            <p><a
+                                    href="https://api.whatsapp.com/send?phone=5491161752604&text=¡Hola,%20tomé%20tu%20contacto%20de%20tu%20Portfolio%20y%20me%20gustaría%20conversar%20con%20vos%20sobre">+54
+                                    9 11 6175 2604</a></p>
                         </div>
                         <!-- Contacto Info Item -->
                         <div class="contact-info-item padd-15">
@@ -453,8 +495,29 @@
             </section>
         </div>
     </div>
+    <!-- Selecionador de color -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </div>
+        <div class="day-nigth s-icon">
+            <i class="fa-solid "></i>
+        </div>
+        <h4>Colores de Tema</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
     <!-- JS Files -->
-    <script src="./static/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
 </body>
 
 </html>
