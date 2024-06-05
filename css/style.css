@@ -745,6 +745,7 @@ h3.hello span {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    height: 190px;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
