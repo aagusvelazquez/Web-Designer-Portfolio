@@ -738,6 +738,18 @@ h3.hello span {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    position: relative;
+}
+.overlay {
+    transition: all 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--bg-black-100);
+    font-weight: 500;
 }
 
 .portfolio .portfolio-item-inner {
@@ -748,9 +760,21 @@ h3.hello span {
     height: 190px;
 }
 
+.portfolio .portfolio-item-inner .portfolio-img {
+    height: 100%;
+}
+
 .portfolio .portfolio-item-inner .portfolio-img img {
-    width: 100%;
+    height: 100%;
     display: block;
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img{
+    filter: brightness(0.3);
+}
+
+.portfolio .portfolio-item:hover .portfolio-img .overlay{
+    opacity: 1;
 }
 
 /* Contact */

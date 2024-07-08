@@ -27,7 +27,6 @@ for (let i = 0; i < totalNavList; i++) {
         for (let j = 0; j < totalNavList; j++) {
             if (navList[j].querySelector("a").classList.contains("active")) {
                 addBackSection(j);
-                // allSelection[j].classList.add("back-section");
             }
             navList[j].querySelector("a").classList.remove("active");
         }
@@ -92,13 +91,44 @@ function asideSectionTogglerBtn() {
 
 /* ============ Modal con Certificaciones ============ */
 function mostrarCertificado(certificadoID) {
-    console.log("se llamo a la funcion");
     const modal = document.getElementById(`product-modal-${certificadoID}`);
     modal.style.display = "block";
 }
 
 function cerrarModal(certificadoID) {
-    console.log("se llamo al cierre");
     const modal = document.getElementById(`product-modal-${certificadoID}`);
     modal.style.display = "none";
 }
+
+/* ============ Enviar correo de #contacto ============ */
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const btnEnviar = document.getElementById("btn-contact");
+    btnEnviar.textContent = 'Enviando Mensaje...';
+    const serviceID = 'default_service';
+    const templateEnvio = 'template_e1odu0p';
+    const templateRespuestaAuto = 'template_rczre8c';
+
+    emailjs.sendForm(serviceID, templateEnvio, this)
+        .then(() => {
+            btnEnviar.textContent = 'Enviar Mensaje';
+            Swal.fire({
+                title: "¡Tu mensaje se ha enviado con éxito!",
+                text: "Me comunicaré con vos a la brevedad.",
+                icon: "success"
+            });
+            document.getElementById('contact-form').reset();
+        }, (err) => {
+            btnEnviar.textContent = 'Enviar Mensaje';
+            alert(JSON.stringify(err));
+            document.getElementById('contact-form').reset();
+        });
+
+    emailjs.sendForm(serviceID, templateRespuestaAuto, this)
+        .then(() => {
+            console.log("ENVIO EXITOSO DE RESPUESTA AUTOMATICA.")
+        }, (err) => {
+            alert(JSON.stringify(err));
+        });
+        
+});
